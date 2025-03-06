@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
         leading: Icon(Icons.menu),
         actions: [
           Padding(
-            padding: const EdgeInsets.only(right: 15.0),
+            padding: const EdgeInsets.only(right: 25.0),
             child: Icon(Icons.person),
           ),
         ],
@@ -74,7 +74,7 @@ class _HomePageState extends State<HomePage> {
             child: Text(
               'Find the best coffee for you',
               style: GoogleFonts.bebasNeue(
-                fontSize: 60,
+                fontSize: 65,
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
               ),
@@ -102,7 +102,7 @@ class _HomePageState extends State<HomePage> {
 
           // Horizontal view of coffee categories
           Container(
-            height: 50,
+            height: 40,
             child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: coffeeType.length,
@@ -118,35 +118,33 @@ class _HomePageState extends State<HomePage> {
 
           // Horizontal listview of coffee tiles
           Container(
-            height: 400,
-            child: Expanded(
+            height: 350,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
                   CoffeeTile(
                     coffeeName: 'Cappucino',
-                    coffeeImagePath: 'lib/images/cappucinno.webp',
+                    coffeeImagePath: 'lib/images/capp.jpeg',
                     coffeePrice: '6.99',
                   ),
                   CoffeeTile(
                     coffeeName: 'Latte',
-                    coffeeImagePath: 'lib/images/cappucino#2.jpg',
+                    coffeeImagePath: 'lib/images/coffee.jpg',
                     coffeePrice: '5.99',
                   ),
                   CoffeeTile(
                     coffeeName: 'Flat White',
-                    coffeeImagePath: 'lib/images/coffee.jpg',
+                    coffeeImagePath: 'lib/images/latte.jpg',
                     coffeePrice: '2.99',
                   ),
                   CoffeeTile(
                     coffeeName: 'Espresso',
-                    coffeeImagePath: 'lib/images/cappucino.png',
+                    coffeeImagePath: 'lib/images/espresso.jpeg',
                     coffeePrice: '4.99',
                   ),
                 ],
               ),
             ),
-          ),
         ],
       ),
     );

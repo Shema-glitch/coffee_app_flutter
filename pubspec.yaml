@@ -23,6 +23,8 @@ flutter:
 
 
   assets:
-    - lib/images/cappucinno.webp
+    - lib/images/capp.jpeg
     - lib/images/cappucino#2.jpg
     - lib/images/coffee.jpg
+    - lib/images/latte.jpg
+    - lib/images/espresso.jpeg
